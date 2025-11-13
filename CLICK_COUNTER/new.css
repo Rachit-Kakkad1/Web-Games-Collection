@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+    padding: 40px 60px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #00e6ff;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a8dadc;
+    margin-bottom: 30px;
+}
+
+
+.score-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.score-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.score-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.score {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    color: #00e6ff;
+    font-weight: bold;
+}
+
+.timer-section {
+    margin-bottom: 30px;
+}
+
+.timer {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    text-shadow: 0 0 10px #ff6b6b;
+}
+
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.click-btn {
+    background: rgba(255, 255, 255, 0.15);  /* transparent */
+    backdrop-filter: blur(8px);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+
+.click-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+
+.click-btn:disabled {
+    background: linear-gradient(145deg, #555, #333);
+    color: #aaa;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.7;
+}
+
+.start-btn {
+    background: linear-gradient(145deg, #00ff95, #00c853);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 255, 149, 0.4);
+}
+
+.start-btn:hover {
+    background: linear-gradient(145deg, #00c853, #009624);
+    transform: scale(1.05);
+}
+
+.reset-btn {
+    background: linear-gradient(145deg, #ff6b6b, #c62828);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.reset-btn:hover {
+    background: linear-gradient(145deg, #e53935, #b71c1c);
+    transform: scale(1.05);
+}
+
+
+.status-message {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #a8dadc;
+    letter-spacing: 0.5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+#resetAllButton {
+    background: linear-gradient(145deg, #ff9f43, #ff6b00);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 159, 67, 0.4);
+}
+
+#resetAllButton:hover {
+    background: linear-gradient(145deg, #ff6b00, #cc5200);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 159, 67, 0.7);
+}
+
+#clickButton {
+    transition: transform 0.15s ease-out;
+}
