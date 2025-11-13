@@ -203,6 +203,7 @@ function endGame() {
     let cps = (current / 10).toFixed(2);
     statusMessage.innerHTML += `<br>CPS: ${cps}`;
 
+    
 
     // ============================================================ //
     //     TASK -- 5 :: Start Button Says "Play Again" After Game   //
