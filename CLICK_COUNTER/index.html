@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickCounter</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Click Counter Game</h1>
+        <p class="subtitle">Click as fast as you can!</p>
+        <div class="score-section">
+            <div class="score-box">
+                <h2>Current Score</h2>
+                <div class="score" id="currentScore">0</div>
+            </div>
+            <div class="score-box">
+                <h2>High Score</h2>
+                <div class="score" id="highScore">0</div>
+            </div>
+        </div>
+        <div class="timer-section">
+            <h2>Time Remaining</h2>
+            <div class="timer" id="timer">10</div>
+        </div>
+        <div class="button-section">
+            <button class="click-btn" id="clickButton" disabled>
+                Click Me !
+            </button>
+            <button id="startButton" class="start-btn">
+                Start Game
+            </button>
+            <button id="pausebtn" class="pause-btn">
+                Pause Game
+            </button>
+            <button id="resumebtn" class="resume-btn">
+                Resume Game
+            </button>
+            <button id="resetButton" class="reset-btn">
+                Reset High Score
+            </button>
+            <button id="resetAllButton" class="reset-btn">
+                Reset Whole Game
+            </button>
+        </div>
+
+        <!-- Game Status Message -->
+        <div id="statusMessage" class="status-message">
+            Click "Start Game" to begin !
+        </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
